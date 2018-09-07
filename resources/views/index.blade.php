@@ -36,7 +36,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
-                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>Minton</span></a>
+                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>Mi Ubersito</span></a>
                     </div>
                 </div>
 
@@ -122,10 +122,14 @@
                                 </a>
 
                                 <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();" class="dropdown-item notify-item">
                                     <i class="mdi mdi-logout"></i> <span>Logout</span>
                                 </a>
-
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
                             </div>
                         </li>
 
