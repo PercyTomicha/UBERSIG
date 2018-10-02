@@ -12,7 +12,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="mdi mdi-email"></i></span>
                             </div>
-                            <input id="nombres" type="text" class="form-control" name="nombres" value="{{ old('nombres') }}" required="" placeholder="Nombre Completo" required autofocus>
+                            <input id="nombres" type="text" class="form-control" name="nombres" value="{{ old('nombres') }}" required="" placeholder="Nombres" required autofocus>
                             @if ($errors->has('nombres'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('nombres') }}</strong>
