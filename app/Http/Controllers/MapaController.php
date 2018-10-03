@@ -3,12 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Image;
-use App\Usuario;
-use App\Chofer;
-use App\Propietario;
+use App\Http\Controllers\Controller;
 
-class TaxiController extends Controller
+class MapaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +14,16 @@ class TaxiController extends Controller
      */
     public function index()
     {
-       // return view('crud.chofer.index',compact('choferes'));
-       // return view('crud.taxi.index');
-       return view('crud.taxi.index');
-    }
+      return view ('crud.mapas.google');
 
+    }
+    /*
+    public function vector()
+    {
+      return view ('crud.mapas.vector');
+
+    }
+*/
     /**
      * Show the form for creating a new resource.
      *
@@ -29,9 +31,7 @@ class TaxiController extends Controller
      */
     public function create()
     {
-     //   $propietarios=DB::table('propietario')->where('i')
-        
-        return view('crud.taxi.create');
+        //
     }
 
     /**
@@ -42,7 +42,7 @@ class TaxiController extends Controller
      */
     public function store(Request $request)
     {
-       dd($request);
+        //
     }
 
     /**

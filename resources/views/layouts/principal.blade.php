@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
 
-        <title>Minton - Responsive Admin Dashboard Template</title>
+        <title>FICCT</title>
 
         <link href="{{asset('plugins/switchery/switchery.min.css')}}" rel="stylesheet" />
         <link href="{{asset('plugins/jquery-circliful/css/jquery.circliful.css')}}" rel="stylesheet" type="text/css" />
@@ -20,6 +20,16 @@
         <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" type="text/css">
 
         <script src="{{asset('assets/js/modernizr.min.js')}}"></script>
+
+        <!-- jvectormap -->
+        <link href="../plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <script src="assets/js/modernizr.min.js"></script>
+
 
         
     </head>
@@ -36,7 +46,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
-                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>Mi Ubersito</span></a>
+                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>Ubersitario</span></a>
                     </div>
                 </div>
 
@@ -131,6 +141,34 @@
                                     <i class="ti-id-badge"></i><span> Gestión de Choferes </span>
                                 </a>
                             </li>
+
+                             <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect waves-primary">
+                                    <i class="ti-map"></i><span> Vehiculos </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="{{route('taxi.index')}}"> Lista de vehichuloss</a></li>
+                                    <li><a href="{{route('taxi.create')}}"> Registrar nuevo vehiculo</a></li>
+                     
+                                </ul>
+                            </li>
+
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect waves-primary">
+                                    <i class="ti-map"></i><span> Mapass </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="{{route('mapa.index')}}"> Google Maps</a></li>
+                           
+                                        <li><a href=""> Vector Maps</a></li> 
+                                  
+                
+                                </ul>
+                            </li>
+
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -149,9 +187,9 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="page-title-box">
-                                    <ol class="breadcrumb float-left">
-                                        <li class="breadcrumb-item"><a href="#">Minton</a></li>
-                                        <li class="breadcrumb-item active">Dashboard</li>
+                                <ol class="breadcrumb float-left">
+                                       
+                                        <li class="breadcrumb-item active">Sistema de Información Geografica</li>
                                     </ol>
                                     <div class="clearfix">
                                     <br>
@@ -181,7 +219,7 @@
                 <!-- end content -->
 
                 <footer class="footer">
-                    2016 - 2018 © Minton <span class="hide-phone">- Coderthemes.com</span>
+                     UAGRM-2018 ©  <span class="hide-phone">- uagrm.edu.bo</span>
                 </footer>
 
             </div>
@@ -215,44 +253,6 @@
                                     </div>
                                 </div>
 
-                                <div class="time-item">
-                                    <div class="item-info">
-                                        <small class="text-muted">30 minutes ago</small>
-                                        <p><a href="#" class="text-info">Lorem</a> commented your post.</p>
-                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
-                                    </div>
-                                </div>
-
-                                <div class="time-item">
-                                    <div class="item-info">
-                                        <small class="text-muted">59 minutes ago</small>
-                                        <p><a href="#" class="text-info">Jessi</a> attended a meeting with<a href="#" class="text-success">John Doe</a>.</p>
-                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
-                                    </div>
-                                </div>
-
-                                <div class="time-item">
-                                    <div class="item-info">
-                                        <small class="text-muted">1 hour ago</small>
-                                        <p><strong><a href="#" class="text-info">John Doe</a></strong>Uploaded 2 new photos</p>
-                                    </div>
-                                </div>
-
-                                <div class="time-item">
-                                    <div class="item-info">
-                                        <small class="text-muted">3 hours ago</small>
-                                        <p><a href="#" class="text-info">Lorem</a> commented your post.</p>
-                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
-                                    </div>
-                                </div>
-
-                                <div class="time-item">
-                                    <div class="item-info">
-                                        <small class="text-muted">5 hours ago</small>
-                                        <p><a href="#" class="text-info">Jessi</a> attended a meeting with<a href="#" class="text-success">John Doe</a>.</p>
-                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -313,7 +313,7 @@
         <script>
             var resizefunc = [];
         </script>
-
+  
         <!-- Plugins  -->
         <script src="{{asset('assets/js/jquery.min.js')}}"></script>
         <script src="{{asset('assets/js/popper.min.js')}}"></script><!-- Popper for Bootstrap -->
@@ -327,6 +327,29 @@
         <script src="{{asset('assets/js/jquery.nicescroll.js')}}"></script>
         <script src="{{asset('assets/js/jquery.scrollTo.min.js')}}"></script>
         <script src="{{asset('plugins/switchery/switchery.min.js')}}"></script>
+
+
+<!-- jvectormap -->
+        <script src="../plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="../plugins/jvectormap/gdp-data.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-uk-mill-en.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-au-mill.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-us-il-chicago-mill-en.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-ca-lcc.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-de-mill.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-in-mill.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-asia-mill.js"></script>
+        <script src="assets/pages/jvectormap.init.js"></script>
+
+        <!-- google maps api -->
+        <script src="http://maps.google.com/maps/api/js?key=AIzaSyDsucrEdmswqYrw0f6ej3bf4M4suDeRgNA"></script>
+
+        <!-- Gmaps file -->
+        <script src="../plugins/gmaps/gmaps.min.js"></script>
+        <!-- demo codes -->
+        <script src="assets/pages/jquery.gmaps.js"></script>
 
         <!-- Counter Up  -->
         <script src="{{asset('plugins/waypoints/lib/jquery.waypoints.min.js')}}"></script>

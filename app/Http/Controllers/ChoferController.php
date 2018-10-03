@@ -36,6 +36,7 @@ class ChoferController extends Controller
      */
     public function create()
     {
+
         return view('crud.chofer.create');
     }
 
