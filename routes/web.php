@@ -19,6 +19,9 @@ Route::get('/loginT', function () {return view('auth.loginT');});
 Route::get('/registerT', function () {return view('auth.registerT');});
 Route::get('/index2', function () {return view('index2');});
 Route::get('/styles', function () {return view('styles');});
-
+Route::resource('usuario','UsuarioController');
+Route::resource('propietario','PropietarioController');
+Route::resource('chofer','ChoferController');
+Route::resource('pasajero','PasajeroController');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
