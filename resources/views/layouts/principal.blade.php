@@ -122,6 +122,11 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="{{route('propietario.index')}}" class="waves-effect waves-primary">
+                                    <i class="ti-id-badge"></i><span> Gestión de Propietarios </span>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="{{route('chofer.index')}}" class="waves-effect waves-primary">
                                     <i class="ti-id-badge"></i><span> Gestión de Choferes </span>
                                 </a>

@@ -142,6 +142,6 @@ class ChoferController extends Controller
         $chofer = Chofer::where('ci','=',$id);
         Chofer::destroy($id);
         \Flash::success("Se ha <strong>Eliminado</strong> un Chofer de forma exitosa!");
-        return redirect('nivel_academico');
+        return redirect('chofer');
     }
 }
