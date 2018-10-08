@@ -10,5 +10,5 @@ class Taxi extends Model
     protected $primary='placa';
     protected $table='taxi';
     protected $fillable=['placa','marca','modelo','anio','color','numero_asientos','numero_puertas', 
-   'con_parrilla','con_aire'.'codigo_ruat'];
+   'con_parrilla','con_aire','codigo_ruat','ci_chofer','ci_propietario'];
 }

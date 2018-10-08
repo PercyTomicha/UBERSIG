@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
 
-        <title>FICCT</title>
+        <title>TAXI VIRTUAL</title>
 
         <link href="{{asset('plugins/switchery/switchery.min.css')}}" rel="stylesheet" />
         <link href="{{asset('plugins/jquery-circliful/css/jquery.circliful.css')}}" rel="stylesheet" type="text/css" />
@@ -46,7 +46,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
-                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>Ubersitario</span></a>
+                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>TAXI VIRTUAL</span></a>
                     </div>
                 </div>
 
@@ -141,6 +141,11 @@
                                     <i class="ti-id-badge"></i><span> Gestión de Choferes </span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="{{route('taxi.index')}}" class="waves-effect waves-primary">
+                                    <i class="ti-id-badge"></i><span> Gestión de Taxis </span>
+                                </a>
+                            </li>
 
                              <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
@@ -189,7 +194,7 @@
                                 <div class="page-title-box">
                                 <ol class="breadcrumb float-left">
                                        
-                                        <li class="breadcrumb-item active">Sistema de Información Geografica</li>
+                                        <li class="breadcrumb-item active">Sistema de Información Geográfica</li>
                                     </ol>
                                     <div class="clearfix">
                                     <br>
