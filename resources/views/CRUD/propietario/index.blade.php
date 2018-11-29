@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <a href="{{route('propietario.create')}}" class="btn btn-w-m btn-success"><i class="fa fa-plus"></i> Agregar Nuevo <strong>
-                        Propietario</strong></a>
+                   
+                <div class="ibox-title">
+                        <a href="{{route('propietario.create')}}" class="btn btn-w-m btn-success"><i class="fa fa-plus"></i> Agregar Nuevo <strong>Propietario</strong></a>
                     </div>
-                    <hr>
+
                     <div class="ibox-content">
                         <div class="table-responsive">
                             <table class="table table-striped table-bordered table-hover dataTables-example" >

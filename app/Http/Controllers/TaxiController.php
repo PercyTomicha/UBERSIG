@@ -21,9 +21,11 @@ class TaxiController extends Controller
      */
     public function index()
     {
-       // return view('crud.chofer.index',compact('choferes'));
-       // return view('crud.taxi.index');
-       return view('crud.taxi.index');
+        $taxi = DB::table('taxi')->get();
+        //return view('estudiante.index',['estudiantes'=>$estudiantes])
+       //dd($taxi);
+        return view('crud.taxi.index',compact('taxi'));
+ 
     }
 
     /**

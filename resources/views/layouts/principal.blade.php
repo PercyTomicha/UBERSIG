@@ -126,11 +126,7 @@
                     <div id="sidebar-menu">
                         <ul>
                             <li class="menu-title">Menú</li>
-                            <li>
-                                <a href="index.html" class="waves-effect waves-primary">
-                                    <i class="ti-home"></i><span> Dashboard </span>
-                                </a>
-                            </li>
+                           
                             <li>
                                 <a href="{{route('propietario.index')}}" class="waves-effect waves-primary">
                                     <i class="ti-id-badge"></i><span> Gestión de Propietarios </span>
@@ -141,12 +137,7 @@
                                     <i class="ti-id-badge"></i><span> Gestión de Choferes </span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="{{route('taxi.index')}}" class="waves-effect waves-primary">
-                                    <i class="ti-id-badge"></i><span> Gestión de Taxis </span>
-                                </a>
-                            </li>
-
+                           
                              <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
                                     <i class="ti-map"></i><span> Vehiculos </span>
@@ -162,14 +153,13 @@
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary">
-                                    <i class="ti-map"></i><span> Mapass </span>
+                                    <i class="ti-map"></i><span> Mapas </span>
                                     <span class="menu-arrow"></span>
                                 </a>
                                 <ul class="list-unstyled">
+
                                     <li><a href="{{route('mapa.index')}}"> Google Maps</a></li>
                            
-                                        <li><a href=""> Vector Maps</a></li> 
-                                  
                 
                                 </ul>
                             </li>

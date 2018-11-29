@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <title>Mi Ubersito - Responsive Admin Dashboard Template</title>
+        <title>Ubersitario</title>
 
         <link href="../plugins/switchery/switchery.min.css" rel="stylesheet" />
 
